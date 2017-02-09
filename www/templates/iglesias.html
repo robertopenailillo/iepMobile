@@ -1,0 +1,72 @@
+﻿
+<ion-view view-title="IEP Peñablanca">
+    <ion-content ng-init="blinds()">
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">Locales</strong>
+        </div>
+		<!--<div class="list list-inset">
+			<label class="item item-input item-select">
+			<div class="input-label">
+			Region
+			</div>
+			<select>
+				<option>I Region</option>
+				<option>II Region</option>
+				<option>III Region</option>
+				<option>IV Region</option>
+				<option selected>V Region</option>
+				<option>VI Region</option>
+				<option>VII Region</option>
+			</select>
+			</label>			
+			</div>
+			
+			<div class="list list-inset">
+			<label class="item item-input item-select">
+			<div class="input-label">
+			Iglesia
+			</div>
+			<select>
+				<option selected>Peñablanca</option>
+				<option>Viña del Mar</option>
+			</select>
+			</label>
+			
+			
+			</div>
+			
+        <div class="im-wrapper">
+            <h4 class="no-border no-padding-bottom">Resultados</h4>
+        </div>-->
+        <ion-list class="animate-ripple">
+            <ion-item nav-clear menu-close class="item-icon-right item-avatar" >
+                <img src="img/material4.jpg">
+                <h2>Templo Central</h2>
+                <p>Victoria 0507 Peñablanca</p>
+                <i class="icon ion-android-map"  ng-click="mostrarMapa(-33.045690, -71.355823, 'Clase Central')" ></i>
+            </ion-item>
+            <ion-item nav-clear menu-close class="item-icon-right item-avatar" >
+                <img src="img/material2.jpg">
+                <h2>Local 100 Aguilas</h2>
+                <p>100 aguilas con proyectada</p>
+                <i class="icon ion-android-map" ng-click="mostrarMapa(-33.052435, -71.359736, 'Local 100 Aguilas')" ></i>
+            </ion-item>
+            <ion-item nav-clear menu-close class="item-icon-right item-avatar"  >
+                <img src="img/material3.jpg">
+                <h2>Local Abtao</h2>
+                <p>Abtao nro 234 </p>
+                <i class="icon ion-android-map" ng-click="mostrarMapa(-33.037551, -71.354684, 'Local Abtao')"></i>
+            </ion-item>
+            <ion-item nav-clear menu-close class="item-icon-right item-avatar" >
+                <img src="img/material1.jpg">
+                <h2>Local Wilson</h2>
+                <p>Wilson nro 245</p>
+                <i class="icon ion-android-map" ng-click="mostrarMapa(-33.044832, -71.339678, 'Local Wilson')" ></i>
+            </ion-item>
+        </ion-list>
+       
+        <br />
+        <br />
+        <br />
+    </ion-content>
+</ion-view>
